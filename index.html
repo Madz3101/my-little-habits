@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Little Habits</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header class="app-header">
+
+            <div class="app-name">
+                MY LITTLE HABITS ✦
+            </div>
+
+            <h1>Today's Habits</h1>
+
+            <p class="subtitle">
+                A little progress every day.
+            </p>
+
+        </header>
+
+<section class="habits">
+
+    <h2>Daily Checklist</h2>
+
+    <!-- Morning brushing -->
+    <div class="habit-card">
+        <div class="habit-icon">☀️</div>
+
+        <div class="habit-info">
+            <h3>Morning Brushing</h3>
+            <p>Start the day fresh</p>
+	    <span class="habit-streak" data-streak="morning">🔥 0 day streak </span>
+        </div>
+
+        <button class="habit-button" data-habit="morning">✓</button>
+    </div>
+
+    <!-- Night brushing -->
+    <div class="habit-card">
+        <div class="habit-icon">🌙</div>
+
+        <div class="habit-info">
+            <h3>Night Brushing</h3>
+            <p>Finish the day fresh</p>
+	    <span class="habit-streak" data-streak="night">🔥 0 day streak </span>
+        </div>
+
+        <button class="habit-button" data-habit="night">✓</button>
+    </div>
+
+    <!-- Fruit tracker -->
+    <div class="habit-card">
+        <div class="habit-icon">🍓</div>
+
+        <div class="habit-info">
+            <h3>Fruit Today?</h3>
+            <p>Have you eaten fruit today?</p>
+	    <span class="habit-streak" data-streak="fruit">🔥 0 day streak </span>
+        </div>
+
+        <button class="habit-button" data-habit="fruit">✓</button>
+    </div>
+
+</section>
+
+
+<!-- DAILY PROGRESS -->
+
+<section class="progress-section">
+
+    <h2>Today's Progress</h2>
+
+    <div class="progress-info">
+        <span>Habits completed</span>
+        <span id="progress-count">0 / 3</span>
+    </div>
+
+    <div class="progress-track">
+        <div id="progress-fill"></div>
+    </div>
+
+</section>
+
+    </main>
+
+<!-- BOTTOM NAVIGATION -->
+
+<nav class="bottom-nav">
+
+    <a href="index.html" class="nav-link active">
+        🏠
+        <span>Home</span>
+    </a>
+
+    <a href="calendar.html" class="nav-link">
+        📅
+        <span>Calendar</span>
+    </a>
+
+    <a href="stats.html" class="nav-link">
+        📊
+        <span>Stats</span>
+    </a>
+    
+    
+    <a href="settings.html" class="nav-link">
+        ⚙️
+        <span>Settings</span>
+    </a>
+
+</nav>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

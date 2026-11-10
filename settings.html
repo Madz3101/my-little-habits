@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Settings - My Little Habits</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header class="app-header">
+
+            <div class="app-name">
+                MY LITTLE HABITS ✦
+            </div>
+
+            <h1>Settings</h1>
+
+            <p class="subtitle">
+                Make this little space yours.
+            </p>
+
+        </header>
+
+        <!-- SETTINGS CONTENT -->
+
+<section class="settings-section">
+
+    <h2>💾 Backup & Restore</h2>
+
+    <p>
+        Save a copy of your habit history so you
+        can restore it on another device.
+    </p>
+
+    <button id="export-backup" type="button">
+        ⬇️ Export Backup
+    </button>
+
+
+<!-- RESTORE BACKUP -->
+
+<button id="restore-backup" type="button">
+    ⬆️ Restore Backup
+</button>
+
+<input
+    type="file"
+    id="backup-file"
+    accept=".json,application/json"
+    hidden
+>
+
+
+    <p id="backup-message"></p>
+
+</section>
+
+
+    </main>
+
+    <!-- BOTTOM NAVIGATION -->
+
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="nav-link">
+            🏠
+            <span>Home</span>
+        </a>
+
+        <a href="calendar.html" class="nav-link">
+            📅
+            <span>Calendar</span>
+        </a>
+
+        <a href="stats.html" class="nav-link">
+            📊
+            <span>Stats</span>
+        </a>
+
+        <a href="settings.html" class="nav-link active">
+            ⚙️
+            <span>Settings</span>
+        </a>
+
+    </nav>
+<script src="settings.js"></script>
+</body>
+</html>

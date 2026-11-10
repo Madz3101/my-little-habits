@@ -1,0 +1,536 @@
+
+/* MY LITTLE HABITS - STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #171521;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Mobile app container */
+
+.app {
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+
+/* Header */
+
+.app-header {
+    margin-bottom: 30px;
+}
+
+.app-name {
+    color: #bda6ea;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #aaa2ba;
+    font-size: 14px;
+}
+
+
+/* HABIT CARDS */
+
+.habits h2 {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.habit-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    background-color: #292538;
+    padding: 18px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+}
+
+.habit-icon {
+    font-size: 26px;
+}
+
+.habit-info {
+    flex: 1;
+}
+
+.habit-info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.habit-info p {
+    margin: 6px 0 0;
+    color: #aaa2ba;
+    font-size: 12px;
+}
+
+.habit-button {
+    width: 36px;
+    height: 36px;
+
+    border: 2px solid #81768f;
+    border-radius: 50%;
+
+    background: transparent;
+    color: transparent;
+
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* COMPLETED HABIT BUTTON */
+
+.habit-button.completed {
+    background-color: #bda6ea;
+    border-color: #bda6ea;
+    color: #171521;
+}
+
+
+/* DAILY PROGRESS */
+
+.progress-section {
+    background-color: #292538;
+    padding: 20px;
+    border-radius: 16px;
+    margin-top: 25px;
+}
+
+.progress-section h2 {
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    color: #aaa2ba;
+    font-size: 14px;
+}
+
+#progress-count {
+    color: white;
+    font-weight: bold;
+}
+
+.progress-track {
+    width: 100%;
+    height: 12px;
+    background-color: #40394f;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progress-fill {
+    height: 100%;
+    width: 0%;
+    background-color: #bda6ea;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+
+/* HABIT STREAK COUNTERS */
+
+.habit-streak {
+    display: block;
+    margin-top: 10px;
+    color: #bda6ea;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* BOTTOM NAVIGATION */
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    max-width: 430px;
+
+    display: flex;
+    justify-content: space-around;
+
+    background-color: #292538;
+    border-top: 1px solid #40394f;
+
+    padding: 12px 10px;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    color: #aaa2ba;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-link.active {
+    color: #bda6ea;
+    font-weight: bold;
+}
+
+/* Keep content above navigation */
+
+.app {
+    padding-bottom: 100px;
+}
+
+
+/* MONTHLY CALENDAR */
+
+.calendar-section {
+    background-color: #292538;
+    border-radius: 16px;
+    padding: 15px;
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.calendar-header h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.calendar-header button {
+    background-color: #40394f;
+    color: #bda6ea;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 5px;
+}
+
+.calendar-weekday {
+    text-align: center;
+    color: #aaa2ba;
+    font-size: 12px;
+    padding: 8px 0;
+}
+
+.calendar-empty {
+    min-height: 55px;
+}
+
+.calendar-day {
+    min-width: 0;
+    min-height: 55px;
+    background-color: #171521;
+    border-radius: 8px;
+    padding: 6px 2px;
+    text-align: center;
+}
+
+.calendar-day.today {
+    background-color: #514166;
+    outline: 1px solid #bda6ea;
+}
+
+.calendar-number {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.calendar-emojis {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+
+/* CALENDAR DATE EDITOR */
+
+.calendar-day {
+    cursor: pointer;
+}
+
+.calendar-day.selected {
+    outline: 2px solid #bda6ea;
+}
+
+.date-editor {
+    background-color: #292538;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.date-editor h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.date-editor-subtitle {
+    color: #aaa2ba;
+    font-size: 13px;
+}
+
+.date-habit-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-top: 10px;
+    padding: 14px;
+
+    background-color: #171521;
+    color: white;
+
+    border: 1px solid #40394f;
+    border-radius: 12px;
+
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.date-habit-button.completed {
+    background-color: #514166;
+    border-color: #bda6ea;
+}
+
+.date-habit-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* STATISTICS PAGE */
+
+.stats-section h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.stats-card {
+    background-color: #292538;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 15px;
+}
+
+.stats-card h3 {
+    font-size: 16px;
+    margin: 0 0 20px;
+}
+
+.stats-numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.stats-numbers div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stats-numbers strong {
+    color: #bda6ea;
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.stats-numbers span {
+    color: #aaa2ba;
+    font-size: 11px;
+}
+
+
+/* MONTHLY PROGRESS GRAPH */
+
+.graph-section {
+    background-color: #292538;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.graph-section h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.graph-subtitle {
+    color: #aaa2ba;
+    font-size: 13px;
+}
+
+.graph-month {
+    color: #bda6ea;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.graph-row {
+    margin-bottom: 22px;
+}
+
+.graph-label {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.graph-label span:last-child {
+    color: #bda6ea;
+    white-space: nowrap;
+}
+
+.graph-track {
+    background-color: #40394f;
+    height: 12px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.graph-fill {
+    background-color: #bda6ea;
+    height: 100%;
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+.graph-percentage {
+    color: #aaa2ba;
+    font-size: 11px;
+    text-align: right;
+    margin: 6px 0 0;
+}
+
+
+/* GRAPH MONTH NAVIGATION */
+
+.graph-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.graph-navigation button {
+    background-color: #40394f;
+    color: #bda6ea;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.graph-navigation button:hover {
+    background-color: #514166;
+}
+
+#graph-month-title {
+    color: #bda6ea;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* SETTINGS PAGE */
+
+.settings-section {
+    background-color: #292538;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.settings-section h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.settings-section p {
+    color: #aaa2ba;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+#export-backup {
+    background-color: #bda6ea;
+    color: #171521;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 20px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#backup-message {
+    color: #bda6ea;
+    text-align: center;
+}
+
+
+/* RESTORE BACKUP BUTTON */
+
+#restore-backup {
+    background-color: #40394f;
+    color: #e2c9ff;
+    border: 1px solid #bda6ea;
+    border-radius: 12px;
+    padding: 14px 20px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+#restore-backup:hover {
+    background-color: #514166;
+}
+

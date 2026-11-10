@@ -1,0 +1,11 @@
+
+{
+  "name": "My Little Habits",
+  "short_name": "Little Habits",
+  "description": "A little space to track my daily habits.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#171521",
+  "theme_color": "#171521"
+}

@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Calendar - My Little Habits</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header class="app-header">
+
+            <div class="app-name">
+                MY LITTLE HABITS ✦
+            </div>
+
+            <h1>Calendar</h1>
+
+            <p class="subtitle">
+                Every little achievement counts.
+            </p>
+
+        </header>
+
+        
+<!-- MONTHLY CALENDAR -->
+
+<section class="calendar-section">
+
+    <div class="calendar-header">
+
+        <button id="previous-month" type="button">
+            ❮
+        </button>
+
+        <h2 id="calendar-month"></h2>
+
+        <button id="next-month" type="button">
+            ❯
+        </button>
+
+    </div>
+
+    <div class="calendar-grid" id="calendar-grid">
+
+        <!-- JavaScript will add dates here -->
+
+    </div>
+
+</section>
+
+
+<!-- SELECTED DATE EDITOR -->
+
+<section class="date-editor">
+
+    <h2 id="selected-date-title">
+        Select a date
+    </h2>
+
+    <p class="date-editor-subtitle">
+        Tap a date above to edit its habits.
+    </p>
+
+    <div id="date-habits">
+
+        <!-- JavaScript will add habit buttons here -->
+
+    </div>
+
+</section>
+
+
+    </main>
+
+<!-- BOTTOM NAVIGATION -->
+
+<nav class="bottom-nav">
+
+    <a href="index.html" class="nav-link">
+        🏠
+        <span>Home</span>
+    </a>
+
+    <a href="calendar.html" class="nav-link active">
+        📅
+        <span>Calendar</span>
+    </a>
+
+    <a href="stats.html" class="nav-link">
+        📊
+        <span>Stats</span>
+    </a>
+
+    <a href="settings.html" class="nav-link">
+        ⚙️
+        <span>Settings</span>
+    </a>
+</nav>
+<script src="calendar.js"></script>
+</body>
+</html>
